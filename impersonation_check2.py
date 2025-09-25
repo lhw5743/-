@@ -12,7 +12,7 @@ import re
 # ======================
 @st.cache_data
 def load_data():
-    file_path = "강원본부 직원 연락처.XLSX"
+    file_path = "강원본부 직원 연락처.XLSX - Sheet1.csv"
     df = pd.read_excel(file_path, dtype=str).fillna("")
     return df
 
@@ -213,3 +213,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
